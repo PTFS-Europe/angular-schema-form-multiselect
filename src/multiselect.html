@@ -1,6 +1,6 @@
 <div class="form-group {{form.htmlClass}} schema-form-multiselect"
      ng-class="{'has-error': hasError(), 'has-success': hasSuccess(), 'has-feedback': form.feedback !== false}">
-    <label class="control-label" ng-show="showTitle()">{{form.title}}</label>
+    <label class="control-label  {{form.fieldHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
     <select ng-model="$$value$$"
           ng-model-options="form.ngModelOptions"
           multiple="multiple"
